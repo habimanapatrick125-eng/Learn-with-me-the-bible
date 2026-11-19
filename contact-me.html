@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me | LEARN BIBLE WITH ME   </title>
+
+    <meta name="description"
+          content="Contact HABIMANA PATRICK about the Bible learning project in English.">
+
+    <link rel="stylesheet" href="Styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+          rel="stylesheet">
+
+    <style>
+        :root {
+            --green: #155d3b;
+            --dark-green: #103d2a;
+            --gold: #d6a83d;
+            --light: #f4f8f5;
+        }
+
+        body {
+            background: var(--light);
+            color: #24332a;
+            font-family: Arial, sans-serif;
+        }
+
+        .contact-hero {
+    background: 
+        linear-gradient(
+            135deg,
+            rgba(16, 61, 42, 0.85),
+            rgba(32, 128, 82, 0.85)
+        ),
+        url('profile.webp');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+        .contact-hero h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 800;
+        }
+
+        .contact-hero p {
+            max-width: 700px;
+            margin: 18px auto 0;
+            line-height: 1.8;
+        }
+
+        .gold-line {
+            width: 80px;
+            height: 4px;
+            background: var(--gold);
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        .contact-card {
+            height: 100%;
+            background: white;
+            padding: 28px;
+            border-radius: 16px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+            border: 1px solid #e5eee7;
+        }
+
+        .contact-icon {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 14px;
+            background: #e4f2e8;
+            color: var(--green);
+            font-size: 25px;
+            margin-bottom: 18px;
+        }
+
+        .contact-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .contact-card a {
+            color: var(--green);
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        .section-title {
+            color: var(--dark-green);
+            font-weight: 800;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+        }
+
+        .form-label {
+            font-weight: 600;
+        }
+
+        .form-control,
+        .form-select {
+            padding: 12px;
+            border-radius: 9px;
+        }
+
+        .form-control:focus {
+            border-color: var(--green);
+            box-shadow: 0 0 0 0.2rem rgba(21, 93, 59, 0.12);
+        }
+
+        .btn-bible {
+            background: var(--green);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 9px;
+            font-weight: 700;
+            border: none;
+        }
+
+        .btn-bible:hover {
+            background: var(--dark-green);
+            color: white;
+        }
+
+        .map-frame {
+            width: 100%;
+            height: 350px;
+            border: 0;
+            border-radius: 16px;
+        }
+
+        .bible-verse {
+            background: #e7f2e9;
+            border-left: 5px solid var(--gold);
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .site-footer {
+            background: #103d2a;
+            color: white;
+            padding: 35px 15px;
+            text-align: center;
+        }
+
+        .site-footer a {
+            color: #f1d17b;
+            text-decoration: none;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 576px) {
+            .contact-hero {
+                padding: 55px 15px;
+            }
+
+            .contact-form,
+            .contact-card {
+                padding: 22px;
+            }
+
+            .map-frame {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-dark"
+     style="background-color: #103d2a;">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="bi bi-book-half text-warning"></i>
+            LEARN BIBLE WITH ME
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Open menu">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="old-testament.html">
+                        Old Testament
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="new-testament.html">
+                        New Testament
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="examples-of-faith.html">
+                        Examples of Faith
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="bible-warnings.html">
+                        Bible Warnings
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="life-of-jesus.html">
+                        Life of Jesus
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="life-today.html">
+                        Life Today
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"
+                       href="contact-me.html">
+                        Contact Me
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="contact-hero">
+
+    <div class="container">
+
+        <i class="bi bi-envelope-paper-heart"
+           style="font-size: 3.5rem; color: #f1d17b;"></i>
+
+        <h1 class="mt-3">Contact Me</h1>
+
+        <div class="gold-line"></div>
+
+        <p>
+            Welcome to the contact page of LEARN BIBLE WITH ME.
+            You can contact me about Bible lessons,
+            spiritual questions, suggestions and development of this project.
+        </p>
+
+    </div>
+</header>
+
+<!-- CONTACT DETAILS -->
+<section class="container py-5">
+
+    <div class="text-center mb-5">
+        <h2 class="section-title">Contact Details</h2>
+        <p class="text-muted">
+            Use one of the ways below to contact me.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+
+                <h3>Project Author</h3>
+
+                <p class="mb-2">
+                    <strong>HABIMANA PATRICK</strong>
+                </p>
+
+                <p class="text-muted mb-0">
+                    Software Engineering student and creator
+                    of the Bible learning project in English.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="bi bi-envelope"></i>
+                </div>
+
+                <h3>Email</h3>
+
+                <p class="text-muted">
+                    You can send me an email to contact me.
+                </p>
+
+                <a href="mailto:habimanapatrick125@gmail.com">
+                    habimanapatrick125@gmail.com
+                </a>
+
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="bi bi-telephone"></i>
+                </div>
+
+                <h3>Phone</h3>
+
+                <p class="text-muted">
+                    Click the link below if you are using a phone
+                    that can make calls.
+                </p>
+
+                <a href="tel:+256726350631">
+                    +256 726 350 631
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="container py-4">
+
+    <div class="row g-4 align-items-start">
+
+        <div class="col-lg-5">
+
+            <h2 class="section-title mb-3">
+                Send a Message
+            </h2>
+
+            <p class="text-muted" style="line-height: 1.9;">
+                Do you have a question about a particular Bible lesson?
+                Do you want to suggest a new lesson or give feedback
+                about the website? Use the form here.
+            </p>
+
+            <div class="bible-verse mt-4">
+
+                <i class="bi bi-book-half fs-3"
+                   style="color: #155d3b;"></i>
+
+                <p class="mt-3 mb-2">
+                    "Your word is a lamp for my feet,
+                    a light on my path."
+                </p>
+
+                <strong>Psalm 119:105</strong>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-7">
+
+            <div class="contact-form">
+
+                <form id="contactForm">
+
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">
+                            Your name
+                        </label>
+
+                        <input type="text"
+                               class="form-control"
+                               id="fullName"
+                               name="fullName"
+                               placeholder="Write your name"
+                               required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">
+                            Your email
+                        </label>
+
+                        <input type="email"
+                               class="form-control"
+                               id="email"
+                               name="email"
+                               placeholder="example@email.com"
+                               required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">
+                            Message subject
+                        </label>
+
+                        <select class="form-select"
+                                id="subject"
+                                name="subject"
+                                required>
+
+                            <option value="">Choose a subject</option>
+                            <option value="Bible Question">Bible Question</option>
+                            <option value="Suggestion">Suggestion</option>
+                            <option value="Feedback about the website">
+                                Feedback about the website
+                            </option>
+                            <option value="Other">Other</option>
+
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">
+                            Your message
+                        </label>
+
+                        <textarea class="form-control"
+                                  id="message"
+                                  name="message"
+                                  rows="5"
+                                  placeholder="Write your message here..."
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-bible w-100">
+                        <i class="bi bi-envelope-fill me-2"></i>
+                        Prepare Email
+                    </button>
+
+                    <p class="small text-muted mt-3 mb-0">
+                        This button will open your email program.
+                        You will need to review and send the message there.
+                    </p>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- MAP -->
+<section class="container py-5">
+
+    <div class="text-center mb-4">
+
+        <h2 class="section-title">General Location</h2>
+
+        <p class="text-muted">
+            Goma, Democratic Republic of the Congo (DRC).
+        </p>
+
+    </div>
+
+    <div class="contact-card">
+
+        <div class="d-flex align-items-center gap-3 mb-3">
+
+            <div class="contact-icon mb-0">
+                <i class="bi bi-geo-alt-fill"></i>
+            </div>
+
+            <div>
+                <h3 class="mb-1">Goma, DRC</h3>
+                <p class="text-muted mb-0">
+                    The map shows only the general area,
+                    not a personal address.
+                </p>
+            </div>
+
+        </div>
+
+        <iframe
+            class="map-frame"
+            src="https://maps.google.com/maps?q=Goma%2C%20Democratic%20Republic%20of%20the%20Congo&t=&z=12&ie=UTF8&iwloc=&output=embed"
+            title="Map of Goma area"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+        </iframe>
+
+        <p class="mt-3 mb-0">
+            <a href="https://www.google.com/maps/search/?api=1&query=Goma%2C+Democratic+Republic+of+the+Congo"
+               target="_blank"
+               rel="noopener noreferrer">
+                Open map in Google Maps
+                <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+        </p>
+
+    </div>
+</section>
+
+<!-- FINAL MESSAGE -->
+<section class="container pb-5">
+
+    <div class="bible-verse text-center">
+
+        <h3 class="section-title">Let Us Continue Learning the Word of God</h3>
+
+        <p class="mt-3 mb-3">
+            The goal of this project is to help people learn the Bible,
+            understand its teachings, and apply its principles in
+            everyday life.
+        </p>
+
+        <a href="index.html" class="btn btn-bible">
+            <i class="bi bi-house-door me-2"></i>
+            Back to Home
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="container">
+
+        <i class="bi bi-book-half fs-2 text-warning"></i>
+
+        <h4 class="mt-2">LEARN BIBLE WITH ME</h4>
+
+        <p>
+            Learning the Bible in English,
+            growing faith and living according to the Word of God.
+        </p>
+
+        <p class="mb-2">
+            Created by <strong>HABIMANA PATRICK</strong>
+        </p>
+
+        <p class="small mb-2">
+            <a href="mailto:habimanapatrick125@gmail.com">
+                habimanapatrick125@gmail.com
+            </a>
+        </p>
+
+        <hr class="border-light opacity-25">
+
+        <p class="small mb-0">
+            &copy; <span id="currentYear"></span>
+            LEARN BIBLE WITH ME. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById("fullName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value.trim();
+
+        if (!name || !email || !subject || !message) {
+            alert("Please fill in all parts of the form.");
+            return;
+        }
+
+        const recipient = "habimanapatrick125@gmail.com";
+        const emailSubject = encodeURIComponent(subject + " - " + name);
+        const emailBody = encodeURIComponent(
+            "Name: " + name +
+            "\nEmail: " + email +
+            "\nSubject: " + subject +
+            "\n\nMessage:\n" + message
+        );
+
+        window.location.href =
+            "mailto:" + recipient +
+            "?subject=" + emailSubject +
+            "&body=" + emailBody;
+    });
+</script>
+
+</body>
+</html>
