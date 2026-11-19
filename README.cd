@@ -1,0 +1,88 @@
+# 📖 LEARN BIBLE WITH ME
+## Bible Learning Project in English
+
+LEARN BIBLE WITH ME is a Bible education website that aims to help people learn the Holy Scriptures, understand Bible teachings, learn from people of faith, and apply Bible principles in everyday life.
+
+This project was created using HTML5, CSS3 and Bootstrap 5.
+
+## 👨💻 About the Author
+- **Name:** HABIMANA PATRICK
+- **University:** Bugema University
+- **Study Program:** Software Engineering
+- **Email:** habimanapatrick125@gmail.com
+- **GitHub:** habimanapatrick125-eng
+
+## 🎯 Project Goals
+The goals of this project are:
+
+- To help people learn the Bible in English.
+- To explain important teachings of the Old Testament and the New Testament.
+- To learn from examples of faith found in the Bible.
+- To understand Bible warnings and teachings.
+- To learn about the life and teachings of Jesus Christ.
+- To help people apply Bible principles in everyday life.
+- To provide a way to contact the project author.
+
+## 📚 Website Pages
+The project has the following pages:
+
+| File | Description |
+| --- | --- |
+| `index.html` | Main page of the website |
+| `old-testament.html` | Lessons about the Old Testament |
+| `new-testament.html` | Lessons about the New Testament |
+| `examples-of-faith.html` | Examples of faith from the Bible |
+| `bible-warnings.html` | Warnings and teachings of the Bible |
+| `life-of-jesus.html` | Life and teachings of Jesus Christ |
+| `life-today.html` | Application of Bible teachings in life today |
+| `contact-me.html` | Author contact |
+| `Styles.css` | Design and styling of the website |
+
+## 🛠️ Technologies Used
+- **HTML5:** To create the structure of the website pages.
+- **CSS3:** To style the website and arrange elements.
+- **Bootstrap 5:** To create a layout that works on phones and computers.
+- **Bootstrap Icons:** To add different icons.
+- **Google Maps:** To show the general location of Goma.
+- **Git and GitHub:** To save and manage the project code.
+- **GitHub Pages:** To publish the website on the internet.
+
+## 📂 Project Structure
+
+
+## 🚀 How to Use the Project
+1. Download or clone the project repository.
+2. Open the project folder in Visual Studio Code.
+3. Open the file `index.html` in a browser.
+4. Use the website menu to visit different pages.
+5. Make sure you have an internet connection to use Bootstrap CDN, the map and external images that need internet.
+
+## 🌐 Publishing with GitHub Pages
+To publish the website:
+
+1. Upload all files to your GitHub repository.
+2. Open that repository.
+3. Go to Settings.
+4. Select Pages.
+5. Under Build and deployment, select Deploy from a branch.
+6. Select the `main` branch and the `/ (root)` folder.
+7. Click Save.
+8. Wait for GitHub Pages to publish your website.
+9. After publishing, you will be able to share your website link with other people.
+
+## ✉️ Contact
+For questions, suggestions or comments about this project:
+
+- **Author:** HABIMANA PATRICK
+- **Email:** habimanapatrick125@gmail.com
+- **GitHub:** https://github.com/habimanapatrick125-eng
+
+## 📖 Bible Message
+"Your word is a lamp for my feet, a light on my path."
+
+Psalm 119:105
+
+## 📄 License
+This project was created for learning and teaching the Bible as well as practising website development.
+
+© HABIMANA PATRICK. All rights reserved.
