@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Study the New Testament in English: the life of Jesus Christ, His teachings, miracles, resurrection, and the ministry of the apostles.">
+
+    <title>New Testament | STUDY THE BIBLE WITH ME</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="Styles.css">
+
+    <style>
+        .page-banner {
+            background:
+                linear-gradient(
+                    120deg,
+                    rgba(21, 59, 53, 0.85),
+                    rgba(36, 91, 78, 0.85)
+                ),
+                url('agano jipya B.webp');
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+            padding: 180px 0;
+            color: var(--white-color);
+            overflow: hidden;
+        }
+
+        .page-banner h1 {
+            color: white;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+        }
+
+        .page-banner p {
+            max-width: 780px;
+            margin: 15px auto 0;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .study-intro {
+            background: #f7f8f4;
+            border-left: 5px solid #f2c14e;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .contents-link {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 13px;
+            border: 1px solid #dce5dd;
+            border-radius: 20px;
+            color: #153b35;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .contents-link:hover {
+            background: #153b35;
+            color: white;
+        }
+
+        .lesson-detail {
+            padding: 28px;
+            background: #ffffff;
+            border: 1px solid #e5e9e5;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+            height: 100%;
+            transition: 0.3s ease;
+        }
+
+        .lesson-detail:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+        }
+
+        .lesson-detail img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 12px 0;
+        }
+
+        .lesson-detail h2 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-top: 10px;
+            margin-bottom: 12px;
+        }
+
+        .lesson-label {
+            color: #8a6810;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .lesson-reference {
+            display: inline-block;
+            color: #245b4e;
+            background: #edf5ef;
+            font-weight: 700;
+            padding: 6px 10px;
+            border-radius: 5px;
+            margin: 5px 0 12px;
+            font-size: 0.88rem;
+        }
+
+        .lesson-note {
+            margin-top: 18px;
+            padding-top: 15px;
+            border-top: 1px solid #e5e9e5;
+        }
+
+        .lesson-note strong {
+            color: #153b35;
+        }
+
+        .lesson-detail .lesson-note p {
+            margin-bottom: 0;
+        }
+
+        .jesus-highlight {
+            background: #153b35;
+            color: white;
+            padding: 35px;
+            border-radius: 15px;
+        }
+
+        .jesus-highlight h2 {
+            color: white;
+        }
+
+        .jesus-highlight p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        @media (max-width: 576px) {
+            .lesson-detail {
+                padding: 20px;
+            }
+
+            .lesson-detail img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-book-half text-warning"></i>
+                STUDY THE BIBLE WITH ME
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Open menu">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="agano-la-kale.html">Old Testament</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="new-testament.html">New Testament</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="mifano-ya-imani.html">Examples of Faith</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="maonyo-biblia.html">Biblical Warnings</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="maisha-ya-yesu.html">Life of Jesus</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="maisha-ya-leo.html">Modern Life</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="nitafute.html">Contact Me</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <header class="page-banner text-center">
+        <div class="container">
+
+            <span class="badge bg-warning text-dark p-2">
+                THE GOOD NEWS OF SALVATION
+            </span>
+
+            <h1 class="mt-3">New Testament</h1>
+
+            <p class="lead">
+                Learn about Jesus Christ, His love, His teachings,
+                miracles, death, and resurrection, as well as how His
+                disciples spread the gospel.
+            </p>
+
+            <a href="#lessons" class="btn btn-warning btn-lg mt-4">
+                <i class="bi bi-book"></i>
+                Start Learning
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- INTRODUCTION -->
+    <section class="py-5">
+        <div class="container">
+
+            <div class="study-intro">
+                <h2 class="fw-bold">What is the New Testament?</h2>
+
+                <p>
+                    The New Testament is the second part of the Christian Bible.
+                    It contains 27 books, including the four Gospels, the Acts
+                    of the Apostles, the epistles of the apostles, and the Book of Revelation.
+                </p>
+
+                <p class="mb-0">
+                    These books testify to the life and ministry of Jesus Christ,
+                    His teachings, His death and resurrection, and the work of His
+                    followers in spreading the message of the gospel.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- QUICK LINKS -->
+    <section class="pb-4">
+        <div class="container text-center">
+
+            <h2 class="h4 fw-bold mb-3">Choose a lesson</h2>
+
+            <a class="contents-link" href="#lesson1">1. Birth of Jesus</a>
+            <a class="contents-link" href="#lesson2">2. Baptism of Jesus</a>
+            <a class="contents-link" href="#lesson3">3. The Disciples</a>
+            <a class="contents-link" href="#lesson4">4. Teachings of Jesus</a>
+            <a class="contents-link" href="#lesson5">5. Miracles</a>
+            <a class="contents-link" href="#lesson6">6. The Good Samaritan</a>
+            <a class="contents-link" href="#lesson7">7. The Prodigal Son</a>
+            <a class="contents-link" href="#lesson8">8. Death of Jesus</a>
+            <a class="contents-link" href="#lesson9">9. Resurrection</a>
+            <a class="contents-link" href="#lesson10">10. The Early Church</a>
+
+        </div>
+    </section>
+
+
+    <!-- LESSONS -->
+    <section class="py-5" id="lessons">
+        <div class="container">
+
+            <div class="section-heading text-center mb-5">
+                <span class="section-label">STUDY THE WORD OF GOD</span>
+
+                <h2 class="fw-bold mt-2">10 Lessons of the New Testament</h2>
+
+                <p class="text-muted">
+                    Read the Bible references, understand the message of each story,
+                    and reflect on how to apply its teachings.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- LESSON 1 -->
+                <div class="col-lg-6" id="lesson1">
+                    <article class="lesson-detail">
+
+                        <span class="lesson-label">LESSON 01</span>
+
+                        <img
+                            src="agano jipya L1.webp"
+                            alt="Birth of Jesus Christ">
+
+                        <h2>Birth of Jesus Christ</h2>
+
+                        <span class="lesson-reference">
+                            Matthew 1:18–25; Luke 2:1–20
+                        </span>
+
+                        <p>
+                            The Gospels describe the birth of Jesus Christ.
+                            An angel informed Joseph about the child who would
+                            be named Jesus. Luke explains how Jesus was born
+                            in Bethlehem and how this news was announced to the shepherds.
+                        </p>
+
+                        <div class="lesson-note">
+                            <strong>Key lesson:</strong>
+                            <p>
+                                The birth of Jesus is a vital part of the story
+                                of God's plan to bring salvation to humanity.
+                            </p>
+                        </div>
+
+                        <div class="lesson-note">
+                            <strong>Life application:</strong>
+                            <p>
+                                Let us remember God's love and show love to
+                                others through both words and actions.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- LESSON 2 -->
+                <div class="col-lg-6" id="lesson2">
+                    <article class="lesson-detail">
+
+                        <span class="lesson-label">LESSON 02</span>
+
+                        <img
+                            src="agano jipya L2.webp"
+                            alt="Baptism of Jesus">
+
+                        <h2>Baptism of Jesus</h2>
+
+                        <span class="lesson-reference">
+                            Matthew 3:13–17; Mark 1:9–11
+                        </span>
+
+                        <p>
+                            Jesus came to John the Baptist to be baptized
+                            in the Jordan River. The Gospel of Matthew describes
+                            how the Spirit of God descended upon Him and a voice
+                            from heaven declared Him to be the beloved Son.
+                        </p>
+
+                        <div class="lesson-note">
+                            <strong>Key lesson:</strong>
+                            <p>
+                                The baptism of Jesus marks the beginning of His
+                                public ministry and the importance of fulfilling God's will.
+                            </p>
+                        </div>
+
+                        <div class="lesson-note">
+                            <strong>Life application:</strong>
+                            <p>
+                                Let us learn humility, obedience, and readiness
+                                to serve God with a sincere heart.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- LESSON 3 -->
+                <div class="col-lg-6" id="lesson3">
+                    <article class="lesson-detail">
+
+                        <span class="lesson-label">LESSON 03</span>
+
+                        <img
+                            src="agano jipya L3.webp"
+                            alt="Jesus Calls His Disciples">
+
+                        <h2>Jesus Calls His Disciples</h2>
+
+                        <span class="lesson-reference">
+                            Matthew 4:18–22; Luke 5:1–11
+                        </span>
+
+                        <p>
+                            Jesus called various people, including fishermen,
+                            to become His disciples. He taught them and prepared
+                            them to participate in His ministry.
+                        </p>
+
+                        <div class="lesson-note">
+                            <strong>Key lesson:</strong>
+                            <p>
+                                Following Jesus involves learning His teachings
+                                and growing in faith and service.
+                            </p>
+                        </div>
+
+                        <div class="lesson-note">
+                            <strong>Life application:</strong>
+                            <p>
+                                Let us be willing to learn, help others,
+                                and use our gifts for the benefit of people.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- LESSON 4 -->
+                <div class="col-lg-6" id="lesson4">
+                    <article class="lesson-detail">
+
+                        <span class="lesson-label">LESSON 04</span>
+
+                        <img
+                            src="agano jipya L4.webp"
+                            alt="Teachings of Jesus on the Mount">
+
+                        <h2>Teachings of Jesus on the Mount</h2>
+
+                        <span class="lesson-reference">
+                            Matthew 5–7
+                        </span>
+
+                        <p>
+                            In the Sermon on the Mount, Jesus taught about
+                            humility, mercy, forgiveness, loving one's enemies,
+                            prayer, and trusting in God.
+                        </p>
+
+                        <div class="lesson-note">
+                            <strong>Key lesson:</strong>
+                            <p>
+                                God desires an inner transformation that is
+                                reflected in our character and how we treat others.
+                            </p>
+                        </div>
+
+                        <div class="lesson-note">
+                            <strong>Life application:</strong>
+                            <p>
+                                Let us be faithful, merciful, and seekers of
+                                peace without seeking revenge.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- LESSON 5 -->
+                <div class="col-lg-6" id="lesson5">
+                    <article class="lesson-detail">
+
+                        <span class="lesson-label">LESSON 05</span>
+
+                        <img
+                            src="agano jipya L5.webp"
+                            alt="Miracles of Jesus">
+
+                        <h2>Miracles of Jesus</h2>
+
+                        <span class="lesson-reference">
+                            Mark 4:35–41; John 6:1–14
+                        </span>
+
+                        <p>
+                            The Gospels recount various miracles of Jesus,
+                            including calming a storm and feeding a large crowd.
+                            These miracles demonstrate His compassion and
+                            authority in the Gospel narrative.
+                        </p>
+
+                        <div class="lesson-note">
+                            <strong>Key lesson:</strong>
+                            <p>
+                                Jesus cared for people in need and taught
+                                His disciples to trust in God.
+                            </p>
+                        </div>
+
+                        <div class="lesson-note">
+                            <strong>Life application:</strong>
+                            <p>
+                                Let us care for those in need, cooperate with
+                                others, and pray to God in faith.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- LESSON 6 -->
+                <div class="col-lg-6" id="lesson6">
+                    <article class="lesson-detail">
+
+                        <span class="lesson-label">LESSON 06</span>
+
+                        <img
+                            src="agano jipya L6.webp"
+                            alt="Parable of the Good Samaritan">
+
+                        <h2>Parable of the Good Samaritan</h2>
+
+                        <span class="lesson-reference">
+                            Luke 10:25–37
+                        </span>
+
+                        <p>
+                            Jesus told a story about a man who was injured on the road.
+                            Some people passed him by, but a Samaritan stopped for him,
+                            cared for him, and ensured he received help. Jesus used
+                            this story to teach about who our neighbor is.
+                        </p>
+
+                        <div class="lesson-note">
+                            <strong>Key lesson:</strong>
+                            <p>
+                                True love is shown through acts of compassion,
+                                not in words alone.
+                            </p>
+                        </div>
+
+                        <div class="lesson-note">
+                            <strong>Life application:</strong>
+                            <p>
+                                Let us help people in need without discriminating
+                                based on tribe, origin, or status.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- LESSON 7 -->
+                <div class="col-lg-6" id="lesson7">
+                    <article class="lesson-detail">
+
+                        <span class="lesson-label">LESSON 07</span>
+
+                        <img
+                            src="agano jipya L7.webp"
+                            alt="Parable of the Prodigal Son">
+
+                        <h2>Parable of the Prodigal Son</h2>
+
+                        <span class="lesson-reference">
+                            Luke 15:11–32
+                        </span>
+
+                        <p>
+                            Jesus told of a son who left home and squandered his
+                            inheritance. When he returned remorseful, his father
+                            welcomed him back. This story illustrates the joy of
+                            receiving back the one who was lost.
+                        </p>
+
+                        <div class="lesson-note">
+                            <strong>Key lesson:</strong>
+                            <p>
+                                This story demonstrates repentance, mercy,
+                                forgiveness, and the joy of restoring relationships.
+                            </p>
+                        </div>
+
+                        <div class="lesson-note">
+                            <strong>Life application:</strong>
+                            <p>
+                                When we make mistakes, let us acknowledge them and
+                                seek to mend relationships. Whenever possible, let us
+                                show mercy to others.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- LESSON 8 -->
+                <div class="col-lg-6" id="lesson8">
+                    <article class="lesson-detail">
+
+                        <span class="lesson-label">LESSON 08</span>
+
+                        <img
+                            src="agano jipya L8.webp"
+                            alt="Death of Jesus Christ">
+
+                        <h2>Death of Jesus Christ</h2>
+
+                        <span class="lesson-reference">
+                            Matthew 27; Luke 23; John 19
+                        </span>
+
+                        <p>
+                            The Gospels explain that Jesus was crucified.
+                            Christians understand His death as a central part
+                            of God's plan of salvation and a demonstration of
+                            His love for humanity.
+                        </p>
+
+                        <div class="lesson-note">
+                            <strong>Key lesson:</strong>
+                            <p>
+                                The death of Jesus reveals the seriousness of sin
+                                and the love of God emphasized in the Gospels.
+                            </p>
+                        </div>
+
+                        <div class="lesson-note">
+                            <strong>Life application:</strong>
+                            <p>
+                                Let us value God's grace, seek forgiveness,
+                                and show sacrificial love for others.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- LESSON 9 -->
+                <div class="col-lg-6" id="lesson9">
+                    <article class="lesson-detail">
+
+                        <span class="lesson-label">LESSON 09</span>
+
+                        <img
+                            src="agano jipya L9.webp"
+                            alt="Resurrection of Jesus">
+
+                        <h2>Resurrection of Jesus</h2>
+
+                        <span class="lesson-reference">
+                            Matthew 28:1–10; Luke 24:1–12; 1 Corinthians 15:3–8
+                        </span>
+
+                        <p>
+                            The Gospels state that after being crucified and buried,
+                            Jesus rose again. His followers testified that the tomb
+                            was empty and that they encountered Him after the resurrection.
+                        </p>
+
+                        <div class="lesson-note">
+                            <strong>Key lesson:</strong>
+                            <p>
+                                The resurrection is the foundation of Christian hope
+                                regarding God's victory over death and the promise of eternal life.
+                            </p>
+                        </div>
+
+                        <div class="lesson-note">
+                            <strong>Life application:</strong>
+                            <p>
+                                Let us live with hope, remembering that present
+                                challenges do not take away the hope taught in the gospel.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- LESSON 10 -->
+                <div class="col-lg-6" id="lesson10">
+                    <article class="lesson-detail">
+
+                        <span class="lesson-label">LESSON 10</span>
+
+                        <img
+                            src="agano jipya L10.webp"
+                            alt="The Early Church and Apostles">
+
+                        <h2>The Early Church and Apostles</h2>
+
+                        <span class="lesson-reference">
+                            Acts 2:1–47; Acts 4:32–35
+                        </span>
+
+                        <p>
+                            The Book of Acts describes how Jesus' disciples received
+                            the Holy Spirit and began preaching the gospel. Believers
+                            gathered for teaching, prayer, fellowship, and mutual support.
+                        </p>
+
+                        <div class="lesson-note">
+                            <strong>Key lesson:</strong>
+                            <p>
+                                The Christian community should be built upon
+                                teaching, prayer, unity, and service.
+                            </p>
+                        </div>
+
+                        <div class="lesson-note">
+                            <strong>Life application:</strong>
+                            <p>
+                                Let us cooperate in doing good, help those in need,
+                                and participate in studying the Bible together.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MESSAGE ABOUT SALVATION -->
+    <section class="py-5">
+        <div class="container">
+
+            <div class="jesus-highlight text-center">
+
+                <i class="bi bi-heart-fill text-warning fs-1"></i>
+
+                <h2 class="fw-bold mt-3">
+                    Salvation through Jesus Christ
+                </h2>
+
+                <p class="lead mt-3">
+                    The Bible teaches that we are saved by grace,
+                    through faith; not so that we can boast about our works.
+                    Good works are part of the new life that God calls us to live.
+                </p>
+
+                <p class="fw-bold">
+                    Ephesians 2:8–10; John 3:16
+                </p>
+
+                <a href="maisha-ya-yesu.html"
+                    class="btn btn-warning btn-lg mt-2">
+                    Learn More About Jesus
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONCLUSION -->
+    <section class="py-5">
+        <div class="container">
+
+            <div class="contact-banner text-center">
+
+                <h2 class="fw-bold">
+                    Continue growing in faith
+                </h2>
+
+                <p class="mt-3">
+                    In the next section, you will learn from examples of people
+                    of faith in the Bible and how their lives can teach us today.
+                </p>
+
+                <a href="mifano-ya-imani.html"
+                    class="btn btn-dark btn-lg mt-2">
+                    Examples of Faith
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-5">
+                    <h4>
+                        <i class="bi bi-book-half text-warning"></i>
+                        STUDY THE BIBLE WITH ME
+                    </h4>
+
+                    <p>
+                        Study the Bible in English, know Jesus Christ,
+                        and meditate on the Word of God every day.
+                    </p>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5>Quick Links</h5>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="agano-la-kale.html">Old Testament</a></li>
+                        <li><a href="mifano-ya-imani.html">Examples of Faith</a></li>
+                        <li><a href="maisha-ya-yesu.html">Life of Jesus</a></li>
+                        <li><a href="nitafute.html">Contact Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5>Website Owner</h5>
+
+                    <p>
+                        <i class="bi bi-person-fill"></i>
+                        HABIMANA PATRICK
+                    </p>
+
+                    <p>
+                        <i class="bi bi-telephone-fill"></i>
+                        +256 726 350 631
+                    </p>
+
+                    <p>
+                        <i class="bi bi-envelope-fill"></i>
+                        <a href="mailto:habimanapatrick125@gmail.com">
+                            habimanapatrick125@gmail.com
+                        </a>
+                    </p>
+
+                    <p>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Bon Voyage, Goma, DRC
+                    </p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center py-3">
+                <p class="mb-1">
+                    &copy; <span id="currentYear"></span>
+                    STUDY THE BIBLE WITH ME. All rights reserved.
+                </p>
+
+                <p class="small mb-0">
+                    Prepared by HABIMANA PATRICK.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script>
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
